@@ -1,0 +1,2 @@
+nasm -I . -f bin -o bootsector.bin bootsector.asm
+qemu-system-x86_64 bootsector.bin

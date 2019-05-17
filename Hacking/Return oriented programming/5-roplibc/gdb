@@ -1,0 +1,1 @@
+sudo gdb --pid=`pidof roplibc` -ex "b *0x804848c" -ex "b *0x08048409" -ex "b *0xf7deac4b"

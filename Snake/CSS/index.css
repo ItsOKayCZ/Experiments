@@ -1,0 +1,23 @@
+.active {
+    background-color: lime;
+    border: 3px dashed green;
+  }
+  
+  .apple {
+    background-color: rosybrown;
+    border: 3px dashed red;
+  }
+  
+  tr,
+  td {
+    width: 35px;
+    height: 35px;
+    background-color: royalblue;
+    border: 3px dashed blue;
+  }
+  
+  button {
+    font-size: 24px;
+    padding: 5px;
+  }
+  

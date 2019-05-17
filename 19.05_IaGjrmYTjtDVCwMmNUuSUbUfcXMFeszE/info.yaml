@@ -1,0 +1,41 @@
+rode0day_id: 9
+
+challenges:
+    sqliteB:
+        challenge_id: 37
+        architecture: "x86"
+        install_dir: "sqliteB"
+        binary_path: "bin/sqlite"
+        binary_arguments: "< {input_file} "
+        sample_inputs: ["inputs/help.sql", "inputs/rnd.sql"]
+        source_provided: false
+
+    fileB4:
+        challenge_id: 38
+        architecture: "x86"
+        install_dir: "fileB4"
+        binary_path: "bin/file"
+        binary_arguments: "-m {install_dir}/share/misc/magic.mgc {input_file}"
+        sample_inputs: ["inputs/hello"]
+        source_provided: false
+
+    jpegB2:
+        challenge_id: 39
+        architecture: "x86_64"
+        install_dir: "jpegB2"
+        binary_path: "bin/jpeg"
+        binary_arguments: "{input_file}"
+        sample_inputs: ["inputs/logo.jpg", "inputs/rodeo.jpg"]
+        source_provided: false
+
+
+    jpegS2:
+        challenge_id: 40
+        architecture: "x86"
+        install_dir: "jpegS2"
+        binary_path: "built/bin/jpeg"
+        binary_arguments: "{input_file}"
+        sample_inputs: ["inputs/logo.jpg", "inputs/rodeo.jpg"]
+        source_provided: true
+        source_path: "src"
+

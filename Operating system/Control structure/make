@@ -1,0 +1,1 @@
+nasm -I . -f bin -o bootsector.bin bootsector.asm

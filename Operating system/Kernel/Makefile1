@@ -1,0 +1,8 @@
+all: run
+.PHONY: bootsector.bin
+
+bootsector.bin: bootsector.asm
+	nasm -f bin $< -o $@
+
+run: bootsector.bin
+	qemu-system-i386 $<
